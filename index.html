@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BeaverAUV</title>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="beaverauv-style.css">
+</head>
+<body>
+
+    <div id="nav" class="nav">
+        <div class="topnav">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="sub.html">The Vehicle</a>
+            <a class="active" href="index.html">Home</a>
+            <a href="index.html" style="float:left;height:fit;width:fit;padding: 2px 10px;background:#999999;">
+                <img src="beaverauv_logo.png" height="40px" width="60px">
+            </a>
+        </div>
+    </div>
+
+    <div id="slideshow" class="slideshow_container">
+        <div id="buff_left" style="width:25%;height:100%;text-align:right;padding:5px;float:left;display:table;">
+            <div id="button_container-left" style="width:fit;display:table-cell;background-color:green;"></div>
+            <button class="showButton" onclick="myShow.previous()" style="float:right;display:table-cell;"><</button>
+        </div>
+
+        <div id="slideshow_img" style="float:left;">
+            <img class="slideshow_img" src="design.png" width="50%">
+            <img class="slideshow_img" src="beaverauv_logo.png" width="50%">
+        </div>
+
+        <div id="buff_right" style="width:25%;text-align:left;padding:5px;float:right;">
+            <button class="showButton" onclick="myShow.next()" style="float:left;">></button>
+        </div>
+
+        <script>
+        myShow = w3.slideshow(".slideshow_img", 3000);
+        </script>
+        <!--<div id="logo" class="logo">
+            <img src="design.png" alt="logo" class="logo">
+        </div>-->
+
+    </div>
+
+    <div id="heading" class="heading">
+        <div id="head-name" class="title">BeaverAUV</div>
+        <div class="sub"> test </div>
+    </div>
+</body>
+</html>

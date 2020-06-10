@@ -1,0 +1,66 @@
+
+.heading {
+  color: red;
+  background:black;
+  text-align:center;
+}
+
+.title {
+  display:inline;
+  background:blue;
+}
+
+.sub {
+  display:inline;
+}
+
+.logo {
+  height:750px;
+  text-align:center;
+}
+
+.nav {
+    display:center;
+    height:70px;
+    background:#cfcfcf;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #323D4A;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #999999;
+  color: #111c29;
+}
+
+.topnav a.active {
+  background-color: #4ca69e;
+  color: white;
+}
+
+.showButton {
+    width:fit;
+}
+
+.slideshow_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:500px;
+}
+
+.slideshow_container {
+    display:table;
+    height:fit;
+}
