@@ -21,7 +21,7 @@
             </a>
         </div>
     </div>
-    <h1>The Vehicle</h1>
+    <h1 class="headding">The Vehicle</h1>
     <p>
         Named in accordance with the RoboSub 2019 theme, Buffy AUV is BeaverAUV's third iteration of an underwater vehicle. It is a highly robust design which allows components to be easily installed and repaired. All components were precision machined to insure watertightness to maximize functionality. Buffy AUV is highly manuverable and incredibly stable in the water. Buffy AUV's eight thrusters enable precise and fast movement. It is guided by a collection of sensors and a camera. It is powered by on-board electronics.
     </p>
@@ -32,37 +32,41 @@
     </div>
     <div>
         <div>
-            <h1 id="mechanics-title">Mechanics</h1>
+            <h1 id="mechanics-title" class="title">Mechanics</h1>
             <div id="mechanics-contents" class="contents">
                 <p>
                     Buffy AUV features a large acrylic pressure hull which houses electronics. It is capped by two anodized aluminum end caps, and surrounded by a waterjet-cut aluminum frame. Buffy AUV also features eight thrusters for propulsion and a dynamic trim system which allows for on-the-fly redistribution of weight.
                 </p>
-                <img src="../images/design.png" height="500px">
+                <img src="../images/design.png" class="pic">
             </div>
         </div>
+        <br>
         <div>
-            <h1 id="electronics-title">Electronics</h1>
+            <h1 id="electronics-title" class="title">Electronics</h1>
             <div id="electronics-contents" class="contents">
                 <p>
                     Buffy AUV's electrical systems is designed for simplicity and functionality. It is designed primarily around off-the-shelf components. Buffy AUV's electrical systems are powered by a Nvidia Jetson computer. Several sensors are implemented to allow Buffy AUV to run autonomously, including an underwater camera, a Blue Robotics depth sensor, and a Vectonav inertial measurement unit(IMU) for orientation data. The power distribution system allows for up to five hours of testing.
                 </p>
-                <img src="../images/electronics-image-1.png" height="250px">
-                <img src="../images/electronics-image-2.png" height="250px">
+                <img src="../images/electronics-image-1.png" class="pic" style="width:49%;">
+                <img src="../images/electronics-image-2.png" class="pic" style="width:49%;">
             </div>
         </div>
+        <br><br>
         <div>
-            <h1 id="software-title">Software</h1>
+            <h1 id="software-title" class="title">Software</h1>
             <div id="software-contents" class="contents">
                 <p>
                     Buffy AUV's software is what allows it to operate autonomously. It is structured around Robot Operating System (ROS). A state machine controls each individual task which the robot has to complete. All movement is controlled by a series of proportional, integral, derivitive(PID) controllers, which use data from all of the sensors to determine how fast each thruster needs to move in order to accomplish the goal of each individual task.
                 </p>
-                <img src="../images/software-flowchart.png" height="500px">
+                <img src="../images/software-flowchart.png" class="pic">
             </div>
         </div>
+        <br><br>
 
     </div>
     <script src="vehicle-script.js"></script>
 </body>
 
 </html>
+
 
