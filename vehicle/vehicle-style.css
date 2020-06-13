@@ -28,6 +28,10 @@
   color: white;
 }
 
+.headding {
+    text-align:center;
+}
+
 .specnav-toggle {
     height:71px;
     clear:both;
@@ -55,8 +59,18 @@
     display:none;
 }
 
+.title {
+    /*background-color:green;*/
+    margin-left:13%;
+    width:87%;
+    clear:both;
+}
+
 .contents {
-    display:show;
+    /*background-color:red;*/
+    float:left;
+    margin-left:25%;
+    width:50%;
 }
 
 #myBtn {
@@ -78,4 +92,12 @@
 #myBtn:hover {
   background-color: #999999;
   color:#323D4A;
+}
+
+.pic {
+    border-style:solid;
+    border-width:1px;
+    width:100%;
+    object-fit:contain;
+    margin-bottom:50px;
 }
