@@ -92,12 +92,4 @@
 #myBtn:hover {
   background-color: #999999;
   color:#323D4A;
-
-}
-.pic {
-    border-style:solid;
-    border-width:1px;
-    width:10%;
-    object-fit:contain;
-    margin-bottom:50px;
 }
