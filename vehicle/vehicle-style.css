@@ -28,6 +28,18 @@
   color: white;
 }
 
+.bauvblue {
+  color:#323D4A;
+}
+
+.bauvterq {
+  color:#4ca69e;
+}
+
+.bauvgray {
+  color:#999999;
+}
+
 .headding {
     text-align:center;
 }
@@ -35,17 +47,16 @@
 .specnav-toggle {
     height:71px;
     clear:both;
+    padding-bottom:100px;
 }
 
 .spec-button {
-    border-radius: 7px 50px 20px;
     float:right;
-    width:10%;
-    height:45px;
+    width:33%;
+    height:150px;
     text-align:center;
     background-color:#4ca69e;
     padding-top:22px;
-    margin-right:17.5%;
     cursor:pointer;
     text-decoration:none;
     color:#323D4A;
@@ -68,9 +79,7 @@
 
 .contents {
     /*background-color:red;*/
-    float:left;
-    margin-left:25%;
-    width:50%;
+    
 }
 
 #myBtn {
@@ -100,4 +109,55 @@
     width:100%;
     object-fit:contain;
     margin-bottom:50px;
+}
+
+.left-side {
+  float:left;
+  margin-left:5%;
+  transform:translateX(-50%);
+}
+
+.right-side {
+  float:right;
+  margin-right:5%;
+  transform:translateX(50%);
+}
+
+.left-side, 
+.right-side {
+  transition:transform 400ms ease-in;
+}
+
+.left-side.appear, 
+.right-side.appear {
+  transform:translateX(0);
+}
+
+.writing {
+  width:40%;
+}
+
+.images {
+  
+  width:40%;
+  
+}
+
+.headimgholder {
+  width:66%;
+  margin-left:16.5%;
+}
+
+.headimg {
+  height:600px;
+}
+
+.fade-in {
+  opacity:0;
+  transition:opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity:1;
+
 }
