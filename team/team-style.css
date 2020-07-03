@@ -27,3 +27,25 @@
   background-color: #4ca69e;
   color: white;
 }
+
+.grade-button {
+  float:left;
+  width:15%;
+  height:50px;
+  text-align:center;
+  background-color:#4ca69e;
+  cursor:pointer;
+  text-decoration:none;
+  color:#323D4A;
+  margin:5%; /* this num should be = (width_val*4 (num of buttons))/8 (num of spaces between buttons) */
+}
+
+.hidden {
+  display:none;
+}
+
+.headshot {
+  height:200px;
+  border-radius:20px;
+  padding:35px;
+}
