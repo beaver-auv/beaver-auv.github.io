@@ -1,17 +1,15 @@
 
 .heading {
-  color: red;
-  background:black;
   text-align:center;
+}
+
+.font {
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 .title {
   display:inline;
-  background:blue;
-}
-
-.sub {
-  display:inline;
+  font-size:35px;
 }
 
 .logo {
@@ -51,6 +49,7 @@
 
 .showButton {
     width:fit;
+    /*margin-top:50%;*/
 }
 
 .slideshow_img {
@@ -64,3 +63,48 @@
     display:table;
     height:fit;
 }
+
+.hiddenSS {
+  display:none;
+}
+
+.hidden {
+  display:none;
+}
+
+.maintext {
+  margin:50px;
+}
+
+.body {
+  margin:10%;
+}
+
+.box {
+  width:80%;
+  border-style:solid;
+  border-color:#999999;
+  margin-top:50px;
+}
+
+.boxes {
+  position:absolute;
+}
+
+.home-img {
+  width:30%;
+  cursor:pointer;
+  padding:15px;
+}
+
+.home-text {
+  width:60%;
+  padding:15px;
+}
+
+.row {
+  width:auto;
+  height:auto;
+  background-color:red;
+}
+
