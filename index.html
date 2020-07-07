@@ -1,58 +1,109 @@
 <!DOCTYPE html>
+<!-- https://robosub.org/programs/2020-robosub/ -->
+<!-- https://docs.google.com/document/d/1054XAGg2y_vc5TbQJCIjQa5aamUG6Q0caysO9GXsPWg/edit?ts=5ed8072f -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>BeaverAUV</title>
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="scrupt.js"></script>
     <link rel="stylesheet" href="home-style.css">
+    <link rel="icon" href="images/beaverauv_logo.png">
 </head>
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-<meta http-equiv="Pragma" content="no-cache"/>
-<meta http-equiv="Expires" content="0"/>
 <body>
 
-    <div id="nav" class="nav">
+    <div id="nav" class="nav font">
         <div class="topnav">
             <div class="topnav">
-            <a href="/sponsor/sponsor.html">Sponsors</a>
-            <a href="/about/about.html">About Us</a>
-            <a href="/team/team-members.html">The Team</a>
-            <a href="/vehicle/vehicle.html">The Vehicle</a>
+            <a href="sponsor/sponsor.html">Sponsors</a>
+            <a href="about/about.html">About Us</a>
+            <a href="team/team-members.html">The Team</a>
+            <a href="vehicle/vehicle.html">The Vehicle</a>
             <a class="active" href="../index.html">Home</a>
             <a href="index.html" style="float:left;height:fit;width:fit;padding: 2px 10px;background:#999999;">
-                <img src="/images/beaverauv_logo.png" height="40px" width="60px">
+                <img src="images/beaverauv_logo.png" height="40px" width="60px">
             </a>
         </div>
         </div>
     </div>
 
     <div id="slideshow" class="slideshow_container">
-        <div id="buff_left" style="width:25%;height:100%;text-align:right;padding:5px;float:left;display:table;">
-            <div id="button_container-left" style="width:fit;display:table-cell;background-color:green;"></div>
-            <button class="showButton" onclick="myShow.previous()" style="float:right;display:table-cell;"><</button>
-        </div>
-
-        <div id="slideshow_img" style="float:left;">
-            <img class="slideshow_img" src="images/design.png" width="50%">
-            <img class="slideshow_img" src="images/beaverauv_logo.png" width="50%">
-        </div>
-
-        <div id="buff_right" style="width:25%;text-align:left;padding:5px;float:right;">
-            <button class="showButton" onclick="myShow.next()" style="float:left;">></button>
-        </div>
-
-        <script>
-        myShow = w3.slideshow(".slideshow_img", 3000);
-        </script>
+        <!--
+        <a>
+                <button class="showButton" onclick="myShow.previous()" style="float:right;display:table-cell;"><</button>
+        </a>
+        -->
+        <a>
+            <div id="slideshow_img" style="float:left;">
+                <img class="hiddenSS" src="images/design.png" width="50%" id="design-img">
+                <img class="slideshow_img" src="images/beaverauv_logo.png" width="50%" id="logo-img">
+            </div>
+        </a>
+        <!--
+        <a>
+                <button class="showButton" onclick="myShow.next()" style="float:left;">></button>
+        </a>
+        -->
+        <!--<script>
+            myShow = w3.slideshow(".slideshow_img", 3000);
+        </script>-->
         <!--<div id="logo" class="logo">
             <img src="design.png" alt="logo" class="logo">
         </div>-->
 
     </div>
-
-    <div id="heading" class="heading">
-        <div id="head-name" class="title">BeaverAUV</div>
-        <div class="sub"> test </div>
+    <!--
+    <div class="maintext">
+        <div id="heading" class="heading">
+            <div id="head-name" class="title"><strong>BeaverAUV</strong></div>
+        </div>
+        <div>
+            <h2>
+                Who we are.
+            </h2>
+            <p class="body">
+                BeaverAUV is a high school robotics team based out of from <a href="https://bcdschool.org">Beaver Country Day</a> in Chestnut Hill, Massachusetts. Our teammates are students ranging from grades 9 - 12 with varied experiences. In addition to building and programming our AUV, we work to give all members access to learn about all types of robotics and technologies.
+            </p>
+        </div>
+        <div>
+            <h2>
+                Our AUV
+            </h2>
+            <p class="body">
+                We are constantly updating our AUV. Lorem ipsum dolor sit amet, has ea molestie argumentum. Rebum graece quaestio no nam, ne vim mazim tractatos, eos et tale pertinacia. An quando argumentum vix, modo quot summo ne nec, ei his purto nominati. Nec an hinc dicat interesset, et has possit nostrud vulputate. Vero voluptatum reformidans ex vix. In sed timeam tacimates gloriatur.
+            </p>
+        </div>
     </div>
+    -->
+    <div id="boxes" class="boxes">
+        <div class="row">
+            <div class="box font" style="float:left;margin-left:10%;">
+                <p style="float:left;text-align:left;" class="home-text">
+                    BeaverAUV is a high school robotics team based out of from <a target="_blank" href="https://bcdschool.org">Beaver Country Day</a> in Chestnut Hill, Massachusetts. Our teammates are students ranging from grades 9 - 12 with varied experiences. In addition to building and programming our AUV, we work to give all members access to learn about all types of robotics and technologies.
+                </p>
+                <a href="vehicle/vehicle.html" class="home-img" style="float:right;">
+                    <img src="images/team-photo-min.jpeg" style="width:100%;float:right;">
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box font" style="float:left;margin-left:10%;">
+                <p style="float:right;text-align:right;" class="home-text">
+                    Our AUV is a light, four-thrustered vehicle that houses advanced technology. We utilize custom mechanical pieces to create durable air-tight seals which protech our hardware. We are constantly updating the phyical and programmatic aspects of our AUV - check out the latest here!
+                </p>
+                <a href="vehicle/vehicle.html" class="home-img" style="float:left;">
+                    <img src="images/render-home-new.jpeg" style="width:100%;">
+                </a>
+            </div>
+        </div>
+        <!--
+        <div class="box" style="float:right;margin-right:5%;">
+            <a href="vehicle/vehicle.html">
+                <img src="images/render-home-new.jpeg" style="width:100%;">
+            </a>
+        </div>
+        -->
+    </div>
+
 </body>
 </html>
