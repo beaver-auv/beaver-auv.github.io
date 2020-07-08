@@ -84,7 +84,6 @@
   width:80%;
   border-style:solid;
   border-color:#999999;
-  margin-top:50px;
 }
 
 .boxes {
@@ -103,8 +102,27 @@
 }
 
 .row {
-  width:auto;
-  height:auto;
-  background-color:red;
+  overflow:hidden;
+  width:100%;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+
+.grey {
+  background-color:#d6d6d6;
+}
+
+.white {
+  background-color:#ffffff;
+}
+
+.footer-container {
+  clear:both;
+  position:relative;
+  margin-top:100px;
+  background-color:#4ca69e;
+  height:50px;
+  width:100%;
+  bottom:0px;
 }
 
