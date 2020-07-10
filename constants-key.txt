@@ -1,6 +1,6 @@
-main very dark blue (almost black): #323D4A;
-main light blue (pretty much terquoise): #4ca69e;
-main grey: #999999;
+main very dark blue (almost black): #323D4A // rgb(50, 61, 74);
+main light blue (pretty much terquoise): #4ca69e // rgb(76, 166, 158);
+main grey: #999999 // rgb(153, 153, 153);
 font that I thought looked nice: (paste into css file) [font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;]
 
 ** feel free to try out other fonts because I just looked through the fonts and chose one that looked good **
