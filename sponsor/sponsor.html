@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>BeaverAUV</title>
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="sponsor-script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="sponsor-style.css">
-    <link rel="icon" href="images/beaverauv_logo.png">
 </head>
 <body>
 
@@ -21,6 +21,9 @@
             </a>
         </div>
     </div>
+    <button id="emailUs" class="email-us">
+        Email Us!
+    </button>
     <div>
         <h1>
             Sponsors
@@ -31,11 +34,36 @@
     </div>
     <div>
         <ul>
+            <img src="../images/sponsor-logos/arr-2.png" class="logo">
+            <!--
             <img src="../images/sponsor-logos/blue-robotics-logo.png" class="logo">
             <img src="../images/sponsor-logos/mathworks-logo.png" class="logo">
             <img src="../images/sponsor-logos/nvidia-logo.png" class="logo">
             <img src="../images/sponsor-logos/connect-tech-logo.png" class="logo">
-            <img src="../images/sponsor-logos/vectornav-logo.jpeg" class="logo" style="height:200px;">
+            <img src="../images/sponsor-logos/vectornav-logo.png" class="logo" style="height:200px;">
+            -->
         </ul>
+    </div>
+    <div id="email-container" class="email-show">
+        <div id="email-content" class="email-content">
+            <!--<button class="close"> X </button>-->
+            <span class="close"> &times; </span>
+            <p> 
+                Email us:
+            </p>
+            <form>
+                <label for="email-to">
+                    <strong>To:</strong> beaverauv@bcdschool.org
+                </label>
+                <br><br>
+                <label for="email-script">
+                    <strong>Email body:</strong>
+                </label>
+                <br>
+                <textarea type="text" id="email-script" name="email-script" rows="20" cols="75" placeholder="Write your email here." class="emailBody"></textarea>
+                <br><br>
+                <input type="submit" value="Send" id="email-send" onclick="sendEmail()">
+            </form>
+        </div>
     </div>
 </body>
