@@ -9,9 +9,10 @@
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="text">Top</button>
+<div id="everything">
   <div id="nav" class="nav">
-        <div class="topnav">
+        <div class="topnav text">
             <a href="../sponsor/sponsor.html">Sponsors</a>
             <a href="../about/about.html">About Us</a>
             <a href="../team/team-members.html">The Team</a>
@@ -24,15 +25,28 @@
     </div>
     <!--<h1 class="headding">The Vehicle</h1>-->
     <br><br>
-    <!--<div id="headimgholder" class="headimgholder">
+    <div id="headimgholder" class="headimgholder img-blur">
         <img src="../images/design.png" class="headimg">
-    </div>-->
-    <p>
+    </div>
+<!--    <script src="https://code.jquery..com/jquery-3.3.1.js"></script> -->
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.js">
+        jQuery(document).ready(function(){
+
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                $('.img-blur').css({
+                    filter:"blur(" + (scroll) + "px)"
+                    console.log("check");
+                })
+            })
+        });
+    </script> -->
+    <p class="text">
         Named in accordance with the RoboSub 2019 theme, Buffy AUV is BeaverAUV's third iteration of an underwater vehicle. It is a highly robust design which allows components to be easily installed and repaired. All components were precision machined to insure watertightness to maximize functionality. Buffy AUV is highly manuverable and incredibly stable in the water. Buffy AUV's eight thrusters enable precise and fast movement. It is guided by a collection of sensors and a camera. It is powered by on-board electronics.
     </p>
 
     
-    <div id="specnav-toggle" class="specnav-toggle" style="padding-right:5px;">
+    <div id="specnav-toggle" class="specnav-toggle text" style="padding-right:5px;">
         <a class="spec-button fade-in" id="software" href="#software-title">
             <b>Software</b>
             <p>Learn more about the brains behind the sub.</p>
@@ -47,10 +61,10 @@
     </div>
     <div class="fade-in">
         <div>
-            <h1 id="mechanics-title" class="title">Mechanics</h1>
+            <h1 id="mechanics-title" class="title text">Mechanics</h1>
             <div id="mechanics-contents" class="contents">
                 <span class="writing left-side slide-in">
-                    <p>
+                    <p class="text">
                         Buffy AUV features a large acrylic pressure hull which houses electronics. It is capped by two anodized aluminum end caps, and surrounded by a waterjet-cut aluminum frame. Buffy AUV also features eight thrusters for propulsion and a dynamic trim system which allows for on-the-fly redistribution of weight.
                     </p>
                 </span>
@@ -61,10 +75,10 @@
         </div>
         <br>
         <div class="fade-in">
-            <h1 id="electronics-title" class="title">Electronics</h1>
+            <h1 id="electronics-title" class="title text">Electronics</h1>
             <div id="electronics-contents" class="contents">
                 <span class="writing right-side slide-in">
-                    <p>
+                    <p class="text">
                         Buffy AUV's electrical systems is designed for simplicity and functionality. It is designed primarily around off-the-shelf components. Buffy AUV's electrical systems are powered by a Nvidia Jetson computer. Several sensors are implemented to allow Buffy AUV to run autonomously, including an underwater camera, a Blue Robotics depth sensor, and a Vectonav inertial measurement unit (IMU) for orientation data. The power distribution system allows for up to five hours of testing.
                     </p>
                 </span>
@@ -76,10 +90,10 @@
         </div>
         <br><br>
         <div class="fade-in">
-            <h1 id="software-title" class="title">Software</h1>
+            <h1 id="software-title" class="title text">Software</h1>
             <div id="software-contents" class="contents">
                 <span class="writing left-side slide-in">
-                    <p>
+                    <p class="text">
                         Buffy AUV's software is what allows it to operate autonomously. It is structured around Robot Operating System (ROS). A state machine controls each individual task which the robot has to complete. All movement is controlled by a series of proportional, integral, derivitive(PID) controllers, which use data from all of the sensors to determine how fast each thruster needs to move in order to accomplish the goal of each individual task.
                     </p>
                 </span>
@@ -93,6 +107,7 @@
 
     </div>
     <script src="vehicle-script.js"></script>
+</div>
 </body>
 
 </html>
