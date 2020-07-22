@@ -117,3 +117,7 @@ p {
   white-space: pre-wrap;
   width:80%;
 }
+
+.text {
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
