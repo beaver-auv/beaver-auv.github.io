@@ -156,8 +156,28 @@
   opacity:0;
   transition:opacity 250ms ease-in;
 }
+/*
+.unblur {
+  filter:blur(0px)
+}
+
+.blurred {
+  filter:blur(4px);
+}
+*/
+.img-clear {
+  filter:blur(0px);
+}
+
+.img-blur {
+  filter:blur(4px);
+}
 
 .fade-in.appear {
   opacity:1;
 
+}
+
+.text {
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
