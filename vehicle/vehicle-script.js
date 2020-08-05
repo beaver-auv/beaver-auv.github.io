@@ -1,3 +1,4 @@
+
 function changeclassmech() {
     document.getElementById('mechanics-contents').className = 'contents';
     document.getElementById('electronics-contents').className = 'hidden';
