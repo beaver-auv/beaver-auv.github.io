@@ -149,6 +149,9 @@
 
 .headimg {
   height:600px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .fade-in {
