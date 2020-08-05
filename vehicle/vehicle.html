@@ -15,7 +15,7 @@
         <div class="topnav text">
             <a href="../sponsor/sponsor.html">Sponsors</a>
             <a href="../about/about.html">About Us</a>
-            <a href="../team/team-members.html">The Team</a>
+            <a href="../team/team-main.html">The Team</a>
             <a class="active" href="../vehicle/vehicle.html">The Vehicle</a>
             <a href="../index.html">Home</a>
             <a href="../index.html" style="float:left;height:fit;width:fit;padding: 2px 10px;background:#999999;">
@@ -25,7 +25,7 @@
     </div>
     <!--<h1 class="headding">The Vehicle</h1>-->
     <br><br>
-    <div id="headimgholder" class="headimgholder img-blur">
+    <div id="headimgholder" class="headimgholder iimg-blur">
         <img src="../images/design.png" class="headimg">
     </div>
 <!--    <script src="https://code.jquery..com/jquery-3.3.1.js"></script> -->
@@ -41,22 +41,23 @@
             })
         });
     </script> -->
-    <p class="text">
-        Named in accordance with the RoboSub 2019 theme, Buffy AUV is BeaverAUV's third iteration of an underwater vehicle. It is a highly robust design which allows components to be easily installed and repaired. All components were precision machined to insure watertightness to maximize functionality. Buffy AUV is highly manuverable and incredibly stable in the water. Buffy AUV's eight thrusters enable precise and fast movement. It is guided by a collection of sensors and a camera. It is powered by on-board electronics.
+    <p class="text" style="padding-left:15%;padding-right:15%;">
+        Named in accordance with the RoboSub 2020 theme, Tuolomee AUV is BeaverAUV's fourth iteration of an underwater vehicle. It is a highly robust design which allows components to be easily installed, repaired, and updated. All components were precision machined to insure watertightness to maximize functionality. Tuolomee AUV is highly manuverable and incredibly stable in the water. Tuolomee AUV's eight thrusters enable precise and fast movement. It is guided by a collection of sensors and a camera and powered by on-board electronics. Learn more about the mechanical, electrical, and software compendents to the AUV.
     </p>
 
+    <br>
     
     <div id="specnav-toggle" class="specnav-toggle text" style="padding-right:5px;">
-        <a class="spec-button fade-in" id="software" href="#software-title">
+        <a class="spec-button fade-in" id="software" href="#software-title" style="border-color:black;border-width:1px;border-style:solid;">
             <b>Software</b>
-            <p>Learn more about the brains behind the sub.</p>
+            <!-- <p style="padding-left:5%;padding-right:5%;">Learn more about the brains behind the sub.</p> -->
         </a>
-        <a class="spec-button fade-in" id="electronics" href="#electronics-title">    <b>Electronics</b>
-            <p>Investigate the electrical components the sub utilizes.</p>
+        <a class="spec-button fade-in" id="electronics" href="#electronics-title" style="border-color:black;border-width:1px;border-style:solid;">    <b>Electronics</b>
+            <!-- <p style="padding-left:5%;padding-right:5%;">Investigate the electrical components the sub utilizes.</p> -->
         </a>
-        <a class="spec-button fade-in" id="mechanics" href="#mechanics-title">
+        <a class="spec-button fade-in" id="mechanics" href="#mechanics-title" style="border-color:black;border-width:1px;border-style:solid;">
             <b>Mechanics</b>
-            <p>Discover the hardware and structure of the sub.</p>
+            <!-- <p style="padding-left:5%;padding-right:5%;">Discover the hardware and structure of the sub.</p> -->
         </a>
     </div>
     <div class="fade-in">
@@ -65,11 +66,14 @@
             <div id="mechanics-contents" class="contents">
                 <span class="writing left-side slide-in">
                     <p class="text">
-                        Buffy AUV features a large acrylic pressure hull which houses electronics. It is capped by two anodized aluminum end caps, and surrounded by a waterjet-cut aluminum frame. Buffy AUV also features eight thrusters for propulsion and a dynamic trim system which allows for on-the-fly redistribution of weight.
+                        Tuolomee AUV features a large acrylic pressure hull which houses electronics. It is capped by two anodized aluminum end caps, and surrounded by a waterjet-cut aluminum frame. Tuolomee AUV also features eight thrusters for propulsion and a dynamic trim system which allows for on-the-fly redistribution of weight. The sub is designed to be easially updated piece by piece without sacrificing the usability of the machine. Similarly, the majority of the structural integretiy has maintained itself thoughout the years, and where it has not, we have been able to design and build customized solutions.
+                    </p>
+                     <p>
+                        Pictured: AUV frame
                     </p>
                 </span>
                 <span class="images right-side slide-in">
-                    <img src="../images/design.png" class="pic">
+                    <img src="../images/parts/frame.png" class="pic">
                 </span>
             </div>
         </div>
@@ -79,12 +83,16 @@
             <div id="electronics-contents" class="contents">
                 <span class="writing right-side slide-in">
                     <p class="text">
-                        Buffy AUV's electrical systems is designed for simplicity and functionality. It is designed primarily around off-the-shelf components. Buffy AUV's electrical systems are powered by a Nvidia Jetson computer. Several sensors are implemented to allow Buffy AUV to run autonomously, including an underwater camera, a Blue Robotics depth sensor, and a Vectonav inertial measurement unit (IMU) for orientation data. The power distribution system allows for up to five hours of testing.
+                        Tuolomee AUV's electrical systems is designed for simplicity and functionality. It is designed primarily around off-the-shelf components. Tuolomee AUV's electrical systems are powered by a Nvidia Jetson computer. Several sensors are implemented to allow Tuolomee AUV to run autonomously, including an underwater camera, a Blue Robotics depth sensor, and a Vectonav inertial measurement unit (IMU) for orientation data. The power distribution system allows for up to five hours of testing at a time.
+                    </p>
+                    <p>
+                        Pictured: computer (left) and power (right) modules
                     </p>
                 </span>
                 <span class="images left-side slide-in" style="float:left;margin-left:5%">
-                    <img src="../images/electronics-image-1.png" class="pic" style="width:49%;">
-                    <img src="../images/electronics-image-2.png" class="pic" style="width:49%;">
+                    <img src="../images/parts/electronics.png" class="pic">
+                    <!--<img src="../images/electronics-image-1.png" class="pic" style="width:49%;">
+                    <img src="../images/electronics-image-2.png" class="pic" style="width:49%;">-->
                 </span>
             </div>
         </div>
@@ -94,7 +102,10 @@
             <div id="software-contents" class="contents">
                 <span class="writing left-side slide-in">
                     <p class="text">
-                        Buffy AUV's software is what allows it to operate autonomously. It is structured around Robot Operating System (ROS). A state machine controls each individual task which the robot has to complete. All movement is controlled by a series of proportional, integral, derivitive(PID) controllers, which use data from all of the sensors to determine how fast each thruster needs to move in order to accomplish the goal of each individual task.
+                        Tuolomee AUV's software is what allows it to operate autonomously. It is structured around Robot Operating System (ROS). A state machine controls each individual task which the robot has to complete. All movement is controlled by a series of proportional, integral, derivitive (PID) controllers, which use data from all of the sensors to determine how fast each thruster needs to move in order to accomplish the goal of each individual task. To the right, see a flow chart of system functionality. The AUV's decision making is dependent on many things including depth, image vision, and many more. 
+                    </p>
+                     <p>
+                        Pictured: AUV decision making flow chart
                     </p>
                 </span>
                 <span class="images right-side slide-in">
