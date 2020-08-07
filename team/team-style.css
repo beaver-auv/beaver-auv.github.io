@@ -655,7 +655,6 @@ font-size: 50px;
   font-size: 50px;
 }
 
-
 .card {
   font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;;
 }
@@ -675,11 +674,11 @@ font-size: 50px;
   background-color:black;
   text-align:center;
   padding:5px;
-  width:10%;
+  width:12%;
   font-size:20px;
   display:inline-block;
-  margin-left:7.2%;
-  margin-right:7.5%;
+  margin-left:6.3%;
+  margin-right:6.3%;
   color:#323D4A;
   border-radius:5px;
   background-color:#999999;
