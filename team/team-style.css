@@ -654,3 +654,30 @@ font-size: 50px;
 
   font-size: 50px;
 }
+
+
+.card {
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;;
+}
+
+.font {
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;;
+}
+
+.page-title {
+  font-size:50px;
+  text-align:center;
+  font-weight:500;
+}
+
+.jump-button {
+  background-color:black;
+  text-align:center;
+  padding:5px;
+  font-size:20px;
+  margin-left:8%;
+  margin-right:7%;
+  color:#323D4A;
+  border-radius:5px;
+  background-color:#999999;
+}
