@@ -668,6 +668,7 @@ font-size: 50px;
   font-size:50px;
   text-align:center;
   font-weight:500;
+  color:#323D4A;
 }
 
 .jump-button {
@@ -680,4 +681,10 @@ font-size: 50px;
   color:#323D4A;
   border-radius:5px;
   background-color:#999999;
+}
+
+.jump-button:hover {
+  text-decoration:none;
+  color:#999999;
+  background-color:#323D4A;
 }
