@@ -38,7 +38,7 @@ function topFunction() {
 
 const appearOptions = {
   root: null,
-  threshold: 0.25, // how much of content is in view (0-1)
+  threshold: 0.15, // how much of content is in view (0-1)
   rootMargin: "0px 0px -200px 0px" // fade in when item is over 200px in view
 
 };
