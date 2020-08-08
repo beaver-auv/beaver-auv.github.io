@@ -1,12 +1,13 @@
 .navb {
     display:center;
-    height:70px;
+    height:67px;
     background:#cfcfcf;
 }
 
 .topnav {
   overflow: hidden;
   background-color: #323D4A;
+  height:45px;
 }
 
 .topnav a {
