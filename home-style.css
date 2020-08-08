@@ -26,6 +26,7 @@
 .topnav {
   overflow: hidden;
   background-color: #323D4A;
+  height:45px;
 }
 
 .topnav a {
