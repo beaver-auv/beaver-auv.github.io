@@ -7,7 +7,7 @@
 .topnav {
   overflow: hidden;
   background-color: #323D4A;
-  height:47px;
+  height:45px;
 }
 
 .topnav a {
@@ -30,7 +30,10 @@
 }
 
 .headding {
-    text-align:center;
+  text-align:center;
+  font-size:50px;
+  font-weight:500;
+  color:#323D4A;
 }
 
 .specnav-toggle {
