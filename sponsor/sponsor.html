@@ -5,66 +5,55 @@
     <title>Sponsor – BeaverAUV</title>
     <script src="sponsor-script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <link rel="stylesheet" href="sponsor-style.css">
+    <link rel="stylesheet" href="../home-style.css">
     <link rel="icon" href="../images/beaverauv_logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Nunito:wght@600&family=Bricolage+Grotesque:wght@700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Nunito', Arial, sans-serif; }</style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="main-navbar">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../images/beaverauv_logo.png" alt="Beaver Logo" height="56"></a>
+            </div>
+            <div class="nav-links">
+                <a href="../team/team-main.html">Team</a>
+                <a href="../vehicle/vehicle.html">AUV</a>
+                <a href="#gallery">Gallery</a>
+                <a href="sponsor.html">Sponsors</a>
+                <a href="../about/about.html">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <div id="nav" class="nav">
-        <div class="topnav text">
-            <a class="active" href="../sponsor/sponsor.html">Sponsors</a>
-            <a href="../about/about.html">About Us</a>
-            <a href="../team/team-main.html">The Team</a>
-            <a href="../vehicle/vehicle.html">The Vehicle</a>
-            <a href="../index.html">Home</a>
-            <a href="../index.html" style="float:left;height:fit;width:fit;padding: 2px 10px;background:#999999;">
-                <img src="../images/beaverauv_logo.png" height="40px" width="60px">
-            </a>
-        </div>
-    </div>
-    <button id="emailUs" class="email-us text">
-        Email Us!
-    </button>
-    <div>
-        <h1 class="text headder">
-            Sponsors
-        </h1> 
-        <p class="text">
-            We are a small team with a small budget, therefore generous sponsors like these are essential to the BeaverAUV team. We are incredibly grateful to all sponsors who have provided us with products and services which have enhanced the functionality of our AUV.
-        </p>
-    </div>
-    <div>
-        <ul>
-            <img src="../images/sponsor-logos/arr-3.png" class="logo">
-            <!--
-            <img src="../images/sponsor-logos/blue-robotics-logo.png" class="logo">
-            <img src="../images/sponsor-logos/mathworks-logo.png" class="logo">
-            <img src="../images/sponsor-logos/nvidia-logo.png" class="logo">
-            <img src="../images/sponsor-logos/connect-tech-logo.png" class="logo">
-            <img src="../images/sponsor-logos/vectornav-logo.png" class="logo" style="height:200px;">
-            -->
-        </ul>
-    </div>
-    <div id="email-container" class="email-show">
-        <div id="email-content" class="email-content text">
-            <span class="close"> &times; </span>
-            <p> 
-                Email us:
+    <section class="sponsor-page-section">
+        <h2 class="dm-sans underline-heading" style="margin-top:2rem;">Sponsors</h2>
+        <div class="sponsor-page-content">
+            <p>
+                We are a small team with a small budget, therefore generous sponsors like these are essential to the BeaverAUV team. We are incredibly grateful to all sponsors who have provided us with products and services which have enhanced the functionality of our AUV.
             </p>
-            <form>
-                <label for="email-to">
-                    <strong>To:</strong> beaverauv@bcdschool.org
-                </label>
-                <br><br>
-                <label for="email-script">
-                    <strong>Email body:</strong>
-                </label>
-                <br>
-                <textarea type="text" id="email-script" name="email-script" rows="20" cols="75" placeholder="Write your email here." class="emailBody"></textarea>
-                <br><br>
-                <input type="submit" value="Send" id="email-send" onclick="sendEmail()">
-            </form>
+            <div class="sponsor-logos-row">
+                <img src="../images/sponsor-logos/arr-3.png" class="logo" style="max-width:200px; margin: 1rem;">
+                <!-- Add more sponsor logos here as needed -->
+            </div>
         </div>
-    </div>
-    <br><br>
+        <div class="sponsor-contact-section">
+            <button id="emailUs" class="about-btn" style="margin-top:2rem;">Email Us!</button>
+            <div id="email-container" class="email-show" style="display:none;">
+                <div id="email-content" class="email-content text">
+                    <span class="close"> &times; </span>
+                    <p>Email us:</p>
+                    <form>
+                        <label for="email-to"><strong>To:</strong> beaverauv@bcdschool.org</label><br><br>
+                        <label for="email-script"><strong>Email body:</strong></label><br>
+                        <textarea type="text" id="email-script" name="email-script" rows="10" cols="50" placeholder="Write your email here." class="emailBody"></textarea><br><br>
+                        <input type="submit" value="Send" id="email-send" onclick="sendEmail()">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="sponsor-script.js"></script>
 </body>
+</html>

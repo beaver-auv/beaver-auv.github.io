@@ -8,49 +8,80 @@
     <script src="scrupt.js"></script>
     <link rel="stylesheet" href="home-style.css">
     <link rel="icon" href="images/beaverauv_logo.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Nunito:wght@600&family=Bricolage+Grotesque:wght@700&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Nunito', Arial, sans-serif; }
+    </style>
 </head>
 <body>
-
-    <div id="nav" class="nav font">
-        <div class="topnav">
-            <div class="topnav">
-            <a href="sponsor/sponsor.html">Sponsors</a>
-            <a href="about/about.html">About Us</a>
-            <a href="team/team-main.html">The Team</a>
-            <a href="vehicle/vehicle.html">The Vehicle</a>
-            <a class="active" href="../index.html">Home</a>
-            <a href="index.html" style="float:left;height:fit;width:fit;padding: 2px 10px;background:#999999;">
-                <img src="images/beaverauv_logo.png" height="40px" width="60px">
-            </a>
-        </div>
-        </div>
-    </div>
-
-    <div id="slideshow" class="slideshow_container">
-        <!--
-        <a>
-                <button class="showButton" onclick="myShow.previous()" style="float:right;display:table-cell;"><</button>
-        </a>
-        -->
-        <a>
-            <div id="slideshow_img" style="float:left;">
-                <img class="hiddenSS" src="images/design.png" width="50%" id="design-img">
-                <img class="slideshow_img" src="images/beaverauv_logo.png" width="50%" id="logo-img">
+    <!-- Navigation Bar -->
+    <nav class="main-navbar">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <a href="index.html"><img src="images/beaverauv_logo.png" alt="Beaver Logo" height="56"></a>
             </div>
-        </a>
-        <!--
-        <a>
-                <button class="showButton" onclick="myShow.next()" style="float:left;">></button>
-        </a>
-        -->
-        <!--<script>
-            myShow = w3.slideshow(".slideshow_img", 3000);
-        </script>-->
-        <!--<div id="logo" class="logo">
-            <img src="design.png" alt="logo" class="logo">
-        </div>-->
+            <div class="nav-links">
+                <a href="team/team-main.html">Team</a>
+                <a href="vehicle/vehicle.html">AUV</a>
+                <a href="#gallery">Gallery</a>
+                <a href="sponsor/sponsor.html">Sponsors</a>
+                <a href="about/about.html">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-center-box">
+            <h1 class="display-text">BEAVER <span class="auv-highlight">AUV</span><br><span class="dm-sans">ROBOTICS TEAM</span></h1>
+        </div>
+    </section>
+
+    <!-- About/Video Section -->
+    <section class="about-video-section twocol">
+        <div class="about-col left">
+            <h2 class="dm-sans">About Us</h2>
+            <p>
+                BeaverAUV is a high school robotics team based out of <a target="_blank" href="https://bcdschool.org">Beaver Country Day School</a> in Chestnut Hill, Massachusetts. Our teammates are students ranging from grades 9 - 12 with varied experiences. In addition to building and programming our AUV, we work to give all members access to learn about all types of robotics and technologies.<br><br>
+                As a small high school team, our sponsors are a great help to us. We greatly appreciate all of our sponsors that see the quality and drive in our team. There are many moving parts that make our team run. Check out how all of our members are getting involved!
+            </p>
+            <div class="about-btn-group">
+                <a class="about-btn" href="team/team-main.html">Meet the Team</a>
+                <a class="about-btn" href="about/about.html">More About Us</a>
+                <a class="about-btn" href="sponsor/sponsor.html">See Our Sponsors</a>
+            </div>
+        </div>
+        <div class="video-col right">
+            <div class="video-image-container">
+                <img src="images/backgroundimage.JPG" alt="Team working on AUV" class="about-video-img">
+                <div class="play-button-overlay">
+                    <svg width="70" height="70" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="48" fill="#13a89e"/>
+                        <polygon points="40,30 70,50 40,70" fill="#fff"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Sub Section -->
+    <section class="about-sub-section twocol">
+        <div class="about-sub-img-col left vcenter">
+            <img src="images/render-home-new.jpeg" alt="AUV Render" class="about-sub-img vcenter-img">
+        </div>
+        <div class="about-sub-col right vcenter">
+            <div class="about-sub-content">
+                <h2 class="dm-sans underline-heading">Our Sub</h2>
+                <p>
+                    Our AUV is a light, eight-thrustered vehicle that houses advanced technology. We are constantly updating the mechanical and programmatic aspects of our AUV.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
     <!--
     <div class="maintext">
         <div id="heading" class="heading">
@@ -74,52 +105,6 @@
         </div>
     </div>
     -->
-    <div id="boxes" class="boxes">
-        <div class="row grey">
-            <div class="box font" style="float:left;margin-left:10%;">
-                <p style="float:left;width:70%;" class="home-text">
-                    BeaverAUV is a high school robotics team based out of <a target="_blank" href="https://bcdschool.org" style="text-decoration:none;color:#323D4A;">Beaver Country Day School</a> in Chestnut Hill, Massachusetts. Our teammates are students ranging from grades 9 - 12 with varied experiences. In addition to building and programming our AUV, we work to give all members access to learn about all types of robotics and technologies. There are many moving parts that make our team run. Check out how all of our members are getting involved. <br><br><br><br> <a style="font-size:20px;margin-left:20%;" href="team/team-main.html"> <b> Meet the team </b> </a> <a style="font-size:20px;margin-left:25%;" href="about/about.html"> <b> About us </b> </a>
-                </p>
-                <a href="vehicle/vehicle.html" class="home-img" style="float:right;">
-                    <img src="images/team-photo-min.jpeg" style="width:100%;float:right;">
-                </a>
-            </div>
-        </div>
-
-        <div class="row white">
-            <div class="box font" style="float:left;margin-left:10%;">
-                <p style="float:right;width:70%;" class="home-text">
-                    Our AUV is a light, eight-thrustered vehicle that houses advanced technology. We are constantly updating the mechanical and programmatic aspects of our AUV.  <br><br><br><br> <a style="font-size:20px;margin-left:35%" href="vehicle/vehicle.html"> <b> Check out the latest </b> </a>
-                </p>
-                </p>
-                <a href="vehicle/vehicle.html" class="home-img" style="float:left;">
-                    <img src="images/render-home-new.jpeg" style="width:100%;">
-                </a>
-            </div>
-        </div>
-
-        <div class="row grey">
-            <div class="box font" style="float:left;margin-left:10%;">
-                <p style="float:left;width:70%;" class="home-text">
-                    As a small highschool team, our sponsors are a great help to us. We like to be able to show our patrons that though we are younger than other teams, we still have a strong, motivatied drive in the work that we pursue. We greatly appreciate all of our sponsors that see that quality in our team. <br><br><br> <a style="font-size:20px;margin-left:35%" href="sponsor/sponsor.html"> <b> See our sponsors </b> </a>
-                </p>
-                <a href="mailto:beaverauv@bcschool.org?subject=BeaverAUV Sponsorship Inquiry" target="_self" data-content="beaverauv@bcdschool.org" data-type="mail" class="home-img" style="float:right;text-decoration:none;">
-                    <div class="contact-us" style="">
-                        Contact us!
-                    </div>
-                </a>
-            </div>
-        </div>
-
     
-    </div>
-
-
-    <!-- This isn't working
-    <div id="footer" class="footer-container">
-        check
-    </div>
-    -->
-
 </body>
 </html>

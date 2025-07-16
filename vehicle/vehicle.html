@@ -4,43 +4,31 @@
 <head>
   <meta charset="utf-8">
   <title>The Vehicle – BeaverAUV</title>
-  <link rel="stylesheet" href="vehicle-style.css">
+  <link rel="stylesheet" href="../home-style.css">
   <link rel="icon" href="../images/beaverauv_logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Nunito:wght@600&family=Bricolage+Grotesque:wght@700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Nunito', Arial, sans-serif; }</style>
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top" class="text">Top</button>
-<div id="everything">
-  <div id="nav" class="nav">
-        <div class="topnav text">
-            <a href="../sponsor/sponsor.html">Sponsors</a>
-            <a href="../about/about.html">About Us</a>
-            <a href="../team/team-main.html">The Team</a>
-            <a class="active" href="../vehicle/vehicle.html">The Vehicle</a>
-            <a href="../index.html">Home</a>
-            <a href="../index.html" style="float:left;height:fit;width:fit;padding: 2px 10px;background:#999999;">
-                <img src="../images/beaverauv_logo.png" height="40px" width="60px">
-            </a>
+    <nav class="main-navbar">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../images/beaverauv_logo.png" alt="Beaver Logo" height="56"></a>
+            </div>
+            <div class="nav-links">
+                <a href="../team/team-main.html">Team</a>
+                <a href="vehicle.html">AUV</a>
+                <a href="#gallery">Gallery</a>
+                <a href="../sponsor/sponsor.html">Sponsors</a>
+                <a href="../about/about.html">Contact</a>
+            </div>
         </div>
-    </div>
-    <!--<h1 class="headding">The Vehicle</h1>-->
+    </nav>
     <br><br>
     <div id="headimgholder" class="headimgholder iimg-blur">
         <img src="../images/design.png" class="headimg">
     </div>
-<!--    <script src="https://code.jquery..com/jquery-3.3.1.js"></script> -->
-<!--    <script src="https://code.jquery.com/jquery-3.3.1.js">
-        jQuery(document).ready(function(){
-
-            $(window).scroll(function(){
-                var scroll = $(window).scrollTop();
-                $('.img-blur').css({
-                    filter:"blur(" + (scroll) + "px)"
-                    console.log("check");
-                })
-            })
-        });
-    </script> -->
     <p class="text" style="padding-left:20%;padding-right:20%;text-align:justify;">
         Named in accordance with the RoboSub 2020 theme, Tuolomee AUV is BeaverAUV's fourth iteration of an underwater vehicle. It is a highly robust design which allows components to be easily installed, repaired, and updated. All components were precision machined to insure watertightness to maximize functionality. Tuolomee AUV is highly manuverable and incredibly stable in the water. Tuolomee AUV's eight thrusters enable precise and fast movement. It is guided by a collection of sensors and a camera and powered by on-board electronics. Scroll down to learn more about the mechanical, electrical, and software components of the AUV.
     </p>
@@ -54,14 +42,11 @@
     <div id="specnav-toggle" class="specnav-toggle text" style="padding-right:5px;">
         <a class="spec-button fade-in" id="software" href="#software-title" style="border-color:black;border-width:1px;border-style:solid;">
             <b>Software</b>
-            <!-- <p style="padding-left:5%;padding-right:5%;">Learn more about the brains behind the sub.</p> -->
         </a>
         <a class="spec-button fade-in" id="electronics" href="#electronics-title" style="border-color:black;border-width:1px;border-style:solid;">    <b>Electronics</b>
-            <!-- <p style="padding-left:5%;padding-right:5%;">Investigate the electrical components the sub utilizes.</p> -->
         </a>
         <a class="spec-button fade-in" id="mechanics" href="#mechanics-title" style="border-color:black;border-width:1px;border-style:solid;">
             <b>Mechanics</b>
-            <!-- <p style="padding-left:5%;padding-right:5%;">Discover the hardware and structure of the sub.</p> -->
         </a>
     </div>
     <div class="fade-in">
@@ -95,8 +80,6 @@
                 </span>
                 <span class="images left-side slide-in" style="float:left;margin-left:5%">
                     <img src="../images/parts/electronics.png" class="pic">
-                    <!--<img src="../images/electronics-image-1.png" class="pic" style="width:49%;">
-                    <img src="../images/electronics-image-2.png" class="pic" style="width:49%;">-->
                 </span>
             </div>
         </div>
@@ -122,7 +105,6 @@
 
     </div>
     <script src="vehicle-script.js"></script>
-</div>
 </body>
 
 </html>

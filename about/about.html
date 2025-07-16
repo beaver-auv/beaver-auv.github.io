@@ -1,92 +1,62 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>About – BeaverAUV</title>
-  <link rel="stylesheet" href="about-style.css">
+  <link rel="stylesheet" href="../home-style.css">
   <link rel="icon" href="../images/beaverauv_logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Nunito:wght@600&family=Bricolage+Grotesque:wght@700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Nunito', Arial, sans-serif; }</style>
 </head>
-
-<body onload="run()">
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-    <div id="nav" class="nav">
-        <div class="topnav text">
-            <a href="../sponsor/sponsor.html">Sponsors</a>
-            <a class="active" href="../about/about.html">About Us</a>
-            <a href="../team/team-main.html">The Team</a>
-            <a href="../vehicle/vehicle.html">The Vehicle</a>
-            <a href="../index.html">Home</a>
-            <a href="../index.html" style="float:left;height:fit;width:fit;padding: 2px 10px;background:#999999;">
-                <img src="../images/beaverauv_logo.png" height="40px" width="60px"> 
-            </a>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="main-navbar">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../images/beaverauv_logo.png" alt="Beaver Logo" height="56"></a>
+            </div>
+            <div class="nav-links">
+                <a href="../team/team-main.html">Team</a>
+                <a href="../vehicle/vehicle.html">AUV</a>
+                <a href="#gallery">Gallery</a>
+                <a href="../sponsor/sponsor.html">Sponsors</a>
+                <a href="about.html">Contact</a>
+            </div>
         </div>
-    </div>
-    <br>
-    <div>
-        <h1 class="headding text">About Us</h1>
-    </div>
+    </nav>
 
-<br>
-    <div id="aboutus-contents" class="contents">
-            <p class="text" style="text-align:justify;">
+    <section class="about-page-section">
+        <h2 class="dm-sans underline-heading" style="margin-top:2rem;">About Us</h2>
+        <div class="about-page-content">
+            <p>
                We are Beaver Country Day School's dedicated Robosub team. Our team spends all year working to build an autonomous underwater vehicle to compete in the National Robosub Competition. BeaverAUV was founded in 2015 and since then, each new generation of students has added, modified and improved upon the vehicle. This team has been to 4 competitions competing in several events that range from torpedo shooting to navigating gates and we have continued to improve every year. The last time we competed in 2019, the BeaverAUV team made it to the finals for the first time in our existence and ended up taking the eighth rank against many other collegiate teams. This accomplishment greatly exceeded our wildest expectations and has forced us to set even higher goals for the future. 
             </p>
-            <br>
-            <br>
-<center><h1>Click below to see our Team Intro Video!</h1></center>
-            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/2HRAxJCWA28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
-        </div>
-<br><br>
-
- <img src="../images/wavesv3.png" style="width:75%;display:block;margin-left:auto;margin-right:auto;">
-
-<br> <br>
-    <div style="background-color:transparent;height:100%;width:100%;display:table;">
-        <div style="height:auto;width:100%;float:auto;">
-            
-            <!-- image from: https://www.iconfinder.com/icons/386736/tweet_twitter_twitter_bird_icon --> 
-            <div id="twitter-box" style="height:auto;width:auto;float:left;display:inline;margin-left:6%;margin-right:6%;">
-                <img id="twitter" src="../images/twitter.png" width="150" hight="150" style="margin: 15px 0px 0px 70px">
-                <br>
-                <a class="spec-button text" id="Twitter" href="https://twitter.com/beaverauv?lang=en" target="_blank">Twitter: @BeaverAUV</a>
-            </div>
-
-            <!-- image from: https://www.iconfinder.com/icons/4373148/gmail_logo_logos_icon --> 
-            <div id="mail-box" style="height:auto;width:auto;display:block;float:left;margin-left:6%;margin-right:6%;">
-                <img id="mail" src="../images/mail.png" width="150" hight="150" style="margin: 15px 0px 0px 70px;">
-                <br>
-                <a class="spec-button text" id="Mail" href="mailto:beaverauv@bcschool.org?subject=Here's what's up..." target="_self" data-content="beaverauv@bcdschool.org" data-type="mail">Mail: beaverauv@bcdschool.org</a>   
-            </div>
-            
-
-
-            <!-- image from: https://www.iconfinder.com/icons/2609558/instagram_media_social_icon --> 
-            <div id="instagram-box" style="height:auto;width:auto;display:inline;margin-left:6%;margin-right:6%;float:left;">
-                <img id="instagram" src="../images/insta.png" width="150" hight="150" style="margin: 15px 0px 0px 70px">
-                <br>
-                <a class="spec-button text" id="Instagram" href="https://www.instagram.com/beaverrobosub/" target="_blank">Instagram: @beaverrobosub</a>
+            <div class="about-video-center">
+                <h3 class="dm-sans" style="margin-top:2rem;">Team Intro Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2HRAxJCWA28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="margin: 2rem 0;"></iframe>
             </div>
         </div>
-        <br><br><br><br><br><br>
-        <div style="margin-top:150px">
-            <p class="text" style="margin-left:0%;font-size:30px;color:#323D4A;text-align:center;">
-                Check out our Twitter!
-            </p>
-            <div style="float:left;display:block;margin-left:35%;margin-right:35%;">
-                <a id="twitter-feed" class="twitter-timeline" data-width="700" data-height="700" href="https://twitter.com/BeaverAUV?ref_src=twsrc%5Etfw">Tweets by BeaverAUV</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
-                <p style="font-size:13px">
-                    If you are unable to see the Twitter media, please make sure your adblocker is disabled.
-                </p>
+        <div class="about-socials-row">
+            <div class="about-social">
+                <img src="../images/twitter.png" width="80" alt="Twitter">
+                <a class="about-btn" href="https://twitter.com/beaverauv?lang=en" target="_blank">Twitter: @BeaverAUV</a>
+            </div>
+            <div class="about-social">
+                <img src="../images/mail.png" width="80" alt="Mail">
+                <a class="about-btn" href="mailto:beaverauv@bcschool.org?subject=Here's what's up..." target="_self">Mail: beaverauv@bcdschool.org</a>
+            </div>
+            <div class="about-social">
+                <img src="../images/insta.png" width="80" alt="Instagram">
+                <a class="about-btn" href="https://www.instagram.com/beaverrobosub/" target="_blank">Instagram: @beaverrobosub</a>
             </div>
         </div>
-    </div>
-
+        <div class="about-twitter-feed">
+            <h3 class="dm-sans" style="margin-top:2rem;">Check out our Twitter!</h3>
+            <a id="twitter-feed" class="twitter-timeline" data-width="700" data-height="700" href="https://twitter.com/BeaverAUV?ref_src=twsrc%5Etfw">Tweets by BeaverAUV</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <p style="font-size:13px; color:#5A5A66;">If you are unable to see the Twitter media, please make sure your adblocker is disabled.</p>
+        </div>
+    </section>
     <script src="about-script.js"></script>
-
 </body>
-
-
-
 </html>

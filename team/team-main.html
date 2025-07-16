@@ -4,229 +4,68 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="team-style.css" />
-    <!--<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="../home-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Nunito:wght@600&family=Bricolage+Grotesque:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" href="../images/beaverauv_logo.png">
-
     <title>Meet the Team – BeaverAUV</title>
   </head>
   <body>
     <script src="team-script.js"></script>
-    <div id="everything">
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-    <div id="nav" class="navb" style="margin:8px;">
-        <div class="topnav font" style="">
-            <a href="../sponsor/sponsor.html">Sponsors</a>
-            <a href="../about/about.html">About Us</a>
-            <a class="active" href="../team/team-members.html">The Team</a>
-            <a href="../vehicle/vehicle.html">The Vehicle</a>
-            <a href="../index.html">Home</a>
-            <a href="../index.html" style="float:left;height:fit;width:fit;padding: 2px 10px;background:#999999;">
-                <img src="../images/beaverauv_logo.png" height="41px" width="60px">
-            </a>
-        </div>
-    </div>
-    <br><br><br>
-
-    <div id="title-page" class="font page-title">
-      Meet the team
-    </div>
-    <br><br><br>
-
-    <div id="nav-bar" class="font" style="">
-        <a class="jump-button" id="" href="#co2023" style=""><b>Seniors</b></a>
-        <a class="jump-button" id="" href="#co2024" style=""><b>Juniors</b></a>
-        <a class="jump-button" id="" href="#co2025" style=""><b>Sophmores</b></a>
-        <a class="jump-button" id="" href="#co2026" style=""><b>Freshmen</b></a>
-        
-        
-        
-    </div>
-
-    <br><br>
-
-    <img src="../images/wavesv3.png" style="width:100%;">
-
-    <br><br>
-
-  <div class="container" >
-      <!-- <div class="row">
-        <div class="col-md-2">
-          <h1 id="co2020" class="co2020" class="verticaltext font-weight-bolder" style="text-align:center;" > S<br>e<br>n<br>i<br>o<br>r<br>s <br><br>2<br>0<br>2<br>0 </h1>
-        </div>
-        <div class="col-md-10">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="card" title="Matt Conn - Senior">
-                <img src="../images/team-headshots/jpg/DilceOliveira.jpg" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Matt Conn</h5>
-                  <h6 class="card-subtitle mb-2 ">Website</h6>
-                </div>
-              </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.about-btn[href^="#"]').forEach(link => {
+          link.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href').slice(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+              e.preventDefault();
+              // Get the navbar height (fallback to 80 if not found)
+              const nav = document.querySelector('.main-navbar');
+              const navHeight = nav ? nav.offsetHeight : 80;
+              // Calculate the scroll position
+              const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 10;
+              window.scrollTo({ top: targetTop, behavior: 'smooth' });
+            }
+          });
+        });
+      });
+    </script>
+    <!-- Navigation Bar -->
+    <nav class="main-navbar">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../images/beaverauv_logo.png" alt="Beaver Logo" height="56"></a>
             </div>
-          </div>
+            <div class="nav-links">
+                <a href="team-main.html">Team</a>
+                <a href="../vehicle/vehicle.html">AUV</a>
+                <a href="#gallery">Gallery</a>
+                <a href="../sponsor/sponsor.html">Sponsors</a>
+                <a href="../about/about.html">Contact</a>
+            </div>
         </div>
-      </div> -->
-
-      <br>
-<img src="../images/wavesv3.png" style="width:100%;" >
-
-<hr class="mt-10"style="height:10px;border-width:0;color:gray;background-color:#015156;padding;0;">
-
-
-<div class="container">
-
-    <div class="row"  class="juniors">
-      <div class="col-md-2">
-        <h1 id="co2024" class="co2024" class="verticaltext font-weight-bolder" style="text-align:center;" > J<br>u<br>n<br>i<br>o<br>r<br>s <br><br>2<br>0<br>2<br>4</h1>
+    </nav>
+    <!-- Hero Section -->
+    <section style="margin: 2.5rem auto 2rem auto; max-width: 700px; text-align:center;">
+      <h1 class="display-text" style="background:none; box-shadow:none; border-radius:0;">Meet the <span class="auv-highlight">Team</span></h1>
+    </section>
+    <!-- Team Navigation -->
+    <div class="about-btn-group" style="justify-content:center; margin-bottom:2.5rem;">
+        <a class="about-btn" href="#co2023">Seniors</a>
+        <a class="about-btn" href="#co2024">Juniors</a>
+        <a class="about-btn" href="#co2025">Sophomores</a>
+        <a class="about-btn" href="#co2026">Freshmen</a>
+    </div>
+    <!-- Team Sections -->
+    <section style="background:#E6E1DC; padding:2.5rem 0;">
+      <div class="container" style="max-width:1100px; margin:auto;">
+        <div id="team-sections"></div>
       </div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card" title="Matthew Conn – Junior">
-              <img src="../images/team-headshots/jpg/MatthewConn.JPG" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Matthew Conn</h5>
-                <h6 class="card-subtitle mb-2 ">Web Design<br>System Managment</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3" title="Willie Loranger – Junior">
-            <div class="card">
-              <img src="../images/team-headshots/jpg/WillieLoranger.JPG" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Willie Loranger</h5>
-                <h6 class="card-subtitle mb-2">Mechanical Team Lead</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card" title="Jayden Weir Lytle  – Junior">
-              <img src="../images/team-headshots/jpg/WeirLytleJayden.JPG" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Jayden Weir Lytle</h5>
-                <h6 class="card-subtitle mb-2">Software and logistics</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <br>
-
-      <!-- <div class="container" >
-        <img src="../images/wavesv3.png" style="width:100%;" >
-
-        <hr class="mt-10"style="height:10px;border-width:0;color:gray;background-color:#015156;padding;0;">
-
-          <div class="row">
-            <div class="col-md-2">
-              <h1 id="co2022" class="co2022" class="verticaltext font-weight-bolder" style="text-align:center;" > S<br>o<br>p<br>h<br>o<br>m<br>r<br>e<br>s <br><br>2<br>0<br>2<br>2</h1>
-            </div>
-            <div class="col-md-10">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="card" title="Dan O'Connor – Sophmore">
-                    <img src="../images/team-headshots/jpg/DannyO'Connor.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <h5 class="card-title">Dan O’Connor</h5>
-                      <h6 class="card-subtitle mb-2 ">Hardware</h6>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="card" title="Corey Predella – Sophmore">
-                    <img src="../images/team-headshots/jpg/CoreyPredella.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <h5 class="card-title">Corey Predella</h5>
-                      <h6 class="card-subtitle mb-2">Hardware</h6>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="card" title="Kayla Vinh – Sophmore">
-                    <img src="../images/team-headshots/jpg/KaylaVinh.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <h5 class="card-title">Kayla Vinh</h5>
-                      <h6 class="card-subtitle mb-2">Software</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <br>
-
-          <img src="../images/wavesv3.png" style="width:100%;" >
-
-
-          <hr class="mt-10"style="height:10px;border-width:0;color:gray;background-color:#015156;padding;0;">
-
-
-    <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <h1 id="co2026" class="co2026" class="verticaltext font-weight-bolder" style="text-align:center;" > F<br>r<br>e<br>s<br>h<br>m<br>e<br>n <br><br>2<br>0<br>2<br>6</h1>
-          </div>
-          <div class="col-md-10">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="card" title="Milin Chhabra – Freshman">
-                  <img src="../images/team-headshots/jpg/MilinChhabra.JPG" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Milin Chhabra</h5>
-                    <h6 class="card-subtitle mb-2 ">Mission Control</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card" title="Andre Gordon – Freshman">
-                  <img src="../images/team-headshots/jpg/AndreGordon.JPG" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Andre Gordon</h5>
-                    <h6 class="card-subtitle mb-2">Software Design</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card" title="Sam Steere – Freshman">
-                  <img src="../images/team-headshots/jpg/SamuelSteere.JPG" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Sam Steere</h5>
-                    <h6 class="card-subtitle mb-2">Hardware</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
+    </section>
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    </div>
   </body>
 </html>
 
