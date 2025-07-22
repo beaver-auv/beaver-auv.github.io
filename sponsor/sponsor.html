@@ -8,7 +8,116 @@
     <link rel="stylesheet" href="../home-style.css">
     <link rel="icon" href="../images/beaverauv_logo.png">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Nunito:wght@600&family=Bricolage+Grotesque:wght@700&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Nunito', Arial, sans-serif; }</style>
+    <style>
+        body { 
+            font-family: 'Nunito', Arial, sans-serif; 
+            background: linear-gradient(120deg, #e0f7fa 0%, #fff 100%);
+            margin: 0;
+        }
+        .sponsor-page-section {
+            margin: 3vw auto;
+            max-width: 900px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,156,166,0.08);
+            padding: 2.5em 3em 2em 3em;
+        }
+        .sponsor-page-content p {
+            text-align: justify;
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 1.15em;
+            color: #222;
+        }
+        .underline-heading {
+            border-bottom: 3px solid #009ca6;
+            display: inline-block;
+            padding-bottom: 0.3em;
+            color: #009ca6;
+            font-size: 2.2em;
+            margin-bottom: 1.5em;
+            margin-top: 0.5em !important;
+        }
+        .sponsor-logos-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+        .sponsor-logos-row .logo {
+            width: 880px;
+            height: 360px;
+            object-fit: contain;
+            background: #e0f7fa;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,156,166,0.08);
+            padding: 0.5em;
+            margin: 0;
+            transition: transform 0.2s;
+        }
+        .sponsor-logos-row .logo:hover {
+            transform: scale(1.07);
+            box-shadow: 0 6px 24px rgba(0,156,166,0.18);
+        }
+        .sponsor-contact-section {
+            text-align: center;
+            margin-top: 2em;
+        }
+        .about-btn {
+            background: #009ca6;
+            color: #fff;
+            border-radius: 8px;
+            padding: 0.7em 2em;
+            font-size: 1.15em;
+            border: none;
+            box-shadow: 0 2px 8px rgba(0,156,166,0.08);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .about-btn:hover {
+            background: #007c85;
+        }
+        .email-content.text {
+            background: #f7fafd;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,156,166,0.08);
+            padding: 2em;
+            margin: 2em auto;
+            max-width: 500px;
+            text-align: left;
+        }
+        .emailBody {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #009ca6;
+            padding: 0.7em;
+            font-size: 1em;
+            margin-bottom: 1em;
+            resize: vertical;
+        }
+        .close {
+            float: right;
+            font-size: 2em;
+            color: #009ca6;
+            cursor: pointer;
+            margin-top: -1em;
+            margin-right: -1em;
+        }
+        @media (max-width: 700px) {
+            .sponsor-page-section {
+                padding: 1em 0.5em;
+            }
+            .email-content.text {
+                padding: 1em;
+            }
+            .sponsor-logos-row .logo {
+                width: 560px;
+                height: 230px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -31,10 +140,10 @@
         <h2 class="dm-sans underline-heading" style="margin-top:2rem;">Sponsors</h2>
         <div class="sponsor-page-content">
             <p>
-                We are a small team with a small budget, therefore generous sponsors like these are essential to the BeaverAUV team. We are incredibly grateful to all sponsors who have provided us with products and services which have enhanced the functionality of our AUV.
+                We are a small team with a limited budget, so generous sponsors like these are essential to the success of the BeaverAUV project. We are deeply grateful to all of our sponsors for providing products, services, and support that have significantly enhanced the performance and capabilities of Anchovy AUV. If you're interested in supporting innovative student engineering and contributing to the future of autonomous underwater systems, we would love to hear from you—please reach out!
             </p>
             <div class="sponsor-logos-row">
-                <img src="../images/sponsor-logos/arr-3.png" class="logo" style="max-width:200px; margin: 1rem;">
+                <img src="../images/sponsor-logos/arr-3.png" class="logo" alt="ARR Sponsor">
                 <!-- Add more sponsor logos here as needed -->
             </div>
         </div>

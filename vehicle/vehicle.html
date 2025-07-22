@@ -7,7 +7,116 @@
   <link rel="stylesheet" href="../home-style.css">
   <link rel="icon" href="../images/beaverauv_logo.png">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Nunito:wght@600&family=Bricolage+Grotesque:wght@700&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Nunito', Arial, sans-serif; }</style>
+  <style>
+    html, body {
+      overflow-x: hidden;
+      /* ...existing code for body... */
+    }
+    body { font-family: 'Nunito', Arial, sans-serif; }
+    .text {
+      margin-left: 12vw;
+      margin-right: 12vw;
+      text-align: justify;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pic {
+      max-width: 800px;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+    /* Parallax background effect for top image */
+    .top-bg-holder {
+      position: relative;
+      width: 100vw;
+      height: 40vh;
+      min-height: 320px;
+      overflow: hidden;
+      margin-bottom: 0;
+      background-image: url('../images/design.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      z-index: 1;
+    }
+    .top-bg-img {
+      display: none; /* Hide the img tag, use CSS background instead */
+    }
+    .top-title {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      font-size: 3.5rem;
+      font-family: 'Bricolage Grotesque', 'DM Sans', Arial, sans-serif;
+      color: #009ca6;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.18);
+      letter-spacing: 2px;
+      background: rgba(255,255,255,0.05);
+      padding: 0.5em 1.5em;
+      border-radius: 16px;
+    }
+    /* Teal button backgrounds */
+    .spec-button {
+      background: #009ca6;
+      color: #fff !important;
+      border-radius: 8px;
+      padding: 0.5em 1.5em;
+      margin: 0 0.5em;
+      border: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background 0.2s;
+      box-shadow: 0 2px 8px rgba(0,156,166,0.08);
+      text-decoration: none;
+      border: 2px solid #009ca6;
+    }
+    .spec-button:hover, .spec-button:focus {
+      background: #007c85;
+      color: #fff;
+      border-color: #007c85;
+    }
+    /* Animation for flowing in */
+    .flow-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(.77,0,.18,1), transform 0.8s cubic-bezier(.77,0,.18,1);
+    }
+    .flow-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Centered image below electronics */
+    .centered-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2em 0;
+    }
+    /* Electronics images same height */
+    #electronics-contents .pic,
+    .centered-img .pic {
+      height: 400px;
+      max-width: 600px;
+      object-fit: cover;
+    }
+    /* Center Software heading */
+    #software-title {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
@@ -26,11 +135,13 @@
         </div>
     </nav>
     <br><br>
-    <div id="headimgholder" class="headimgholder iimg-blur">
-        <img src="../images/design.png" class="headimg">
+    <!-- Top image as fixed background with overlay title -->
+    <div class="top-bg-holder">
+      <img src="../images/design.png" class="top-bg-img" alt="Robot Design">
+      <div class="top-title">Robot Design</div>
     </div>
-    <p class="text" style="padding-left:20%;padding-right:20%;text-align:justify;">
-        Named in accordance with the RoboSub 2020 theme, Tuolomee AUV is BeaverAUV's fourth iteration of an underwater vehicle. It is a highly robust design which allows components to be easily installed, repaired, and updated. All components were precision machined to insure watertightness to maximize functionality. Tuolomee AUV is highly manuverable and incredibly stable in the water. Tuolomee AUV's eight thrusters enable precise and fast movement. It is guided by a collection of sensors and a camera and powered by on-board electronics. Scroll down to learn more about the mechanical, electrical, and software components of the AUV.
+    <p class="text flow-in">
+        Anchovy is BeaverAUV’s fifth-generation autonomous underwater vehicle, developed for the 2025 RoboSub competition. Building on the successes of previous AUVs, Anchovy features a robust and modular design that makes component access, repair, and upgrades easier than ever. Its large acrylic pressure hull, sealed with anodized aluminum end caps and protected by a waterjet-cut aluminum frame, ensures durability and watertight integrity. Anchovy is equipped with eight thrusters and a dynamic trim system, providing precise control and stability in all axes. Powered by an NVIDIA Jetson computer and a reliable power distribution system, it supports up to five hours of autonomous operation. Anchovy's sensor suite includes a high-resolution underwater camera, a Blue Robotics depth sensor, and a VectorNav IMU, enabling advanced navigation and perception. Scroll down to learn more about Anchovy’s mechanical, electrical, and software systems.
     </p>
 
     <br><br>
@@ -40,70 +151,90 @@
     <br><br>
     
     <div id="specnav-toggle" class="specnav-toggle text" style="padding-right:5px;">
-        <a class="spec-button fade-in" id="software" href="#software-title" style="border-color:black;border-width:1px;border-style:solid;">
+        <a class="spec-button fade-in" id="software" href="#software-title">
             <b>Software</b>
         </a>
-        <a class="spec-button fade-in" id="electronics" href="#electronics-title" style="border-color:black;border-width:1px;border-style:solid;">    <b>Electronics</b>
+        <a class="spec-button fade-in" id="electronics" href="#electronics-title">
+            <b>Electronics</b>
         </a>
-        <a class="spec-button fade-in" id="mechanics" href="#mechanics-title" style="border-color:black;border-width:1px;border-style:solid;">
+        <a class="spec-button fade-in" id="mechanics" href="#mechanics-title">
             <b>Mechanics</b>
         </a>
     </div>
+    <br>
     <div class="fade-in">
         <div>
-            <h1 id="mechanics-title" class="title text">Mechanics</h1>
+            <h1 id="mechanics-title" class="title text flow-in" style="text-align:center;margin-left:auto;margin-right:auto;display:block;">Mechanics</h1>
             <div id="mechanics-contents" class="contents">
-                <span class="writing left-side slide-in">
-                    <p class="text">
-                        Tuolomee AUV features a large acrylic pressure hull which houses electronics. It is capped by two anodized aluminum end caps, and surrounded by a waterjet-cut aluminum frame. Tuolomee AUV also features eight thrusters for propulsion and a dynamic trim system which allows for on-the-fly redistribution of weight. The sub is designed to be easially updated piece by piece without sacrificing the usability of the machine. Similarly, the majority of the structural integrity has maintained itself thoughout the years, and where it has not, we have been able to design and build customized solutions.
+                <span class="writing left-side slide-in flow-in">
+                    <p class="text flow-in">
+                        Anchovy AUV features a large acrylic pressure hull that houses its core electronics, sealed by two anodized aluminum end caps and protected by a precision waterjet-cut aluminum frame. The vehicle is powered by eight thrusters for full six-degree-of-freedom control and includes a dynamic trim system that allows for real-time redistribution of weight. Anchovy’s modular design enables easy, piece-by-piece updates without compromising the system’s overall usability. Much of the original structural framework has proven durable over multiple iterations, and where replacements were necessary, we engineered custom solutions to maintain integrity and performance.
                     </p>
-                     <p>
+                     <p class="text flow-in">
                         Pictured: AUV frame
                     </p>
                 </span>
-                <span class="images right-side slide-in">
+                <span class="images right-side slide-in flow-in" style="display: flex; justify-content: center; align-items: center;">
                     <img src="../images/parts/frame.png" class="pic">
                 </span>
             </div>
         </div>
         <br>
         <div class="fade-in">
-            <h1 id="electronics-title" class="title text">Electronics</h1>
+            <h1 id="electronics-title" class="title text flow-in" style="text-align:center;margin-left:auto;margin-right:auto;display:block;">Electronics</h1>
+            <br>
             <div id="electronics-contents" class="contents">
-                <span class="writing right-side slide-in">
-                    <p class="text">
-                        Tuolomee AUV's electrical systems are designed for simplicity and functionality. It is designed primarily around off-the-shelf components. Tuolomee AUV's electrical systems are powered by a Nvidia Jetson computer. Several sensors are implemented to allow Tuolomee AUV to run autonomously, including an underwater camera, a Blue Robotics depth sensor, and a Vectonav inertial measurement unit (IMU) for orientation data. The power distribution system allows for up to five hours of testing at a time.
+                <span class="writing right-side slide-in flow-in">
+                    <p class="text flow-in">
+                        Anchovy AUV’s electrical system is built for reliability and ease of integration, primarily utilizing off-the-shelf components. At its core is an NVIDIA Jetson onboard computer, responsible for processing sensor data and coordinating autonomous behaviors. Anchovy is equipped with a suite of sensors, including a low-light underwater camera, a Blue Robotics depth sensor, and a VectorNav inertial measurement unit (IMU) for orientation and navigation. The power distribution system is designed for safety, scalability, and efficiency, providing up to five hours of continuous operation during testing and missions.
                     </p>
-                    <p>
+                    <p class="text flow-in">
                         Pictured: computer module (left) and power module (right) 
                     </p>
                 </span>
-                <span class="images left-side slide-in" style="float:left;margin-left:5%">
-                    <img src="../images/parts/electronics.png" class="pic">
+                <span class="images left-side slide-in flow-in" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="../images/parts/electronics.png" class="pic" style="height:600px;max-width:900px;">
                 </span>
             </div>
         </div>
         <br><br>
         <div class="fade-in">
-            <h1 id="software-title" class="title text">Software</h1>
+            <h1 id="software-title" class="title text flow-in" style="text-align:center;margin-left:auto;margin-right:auto;display:block;">Software</h1>
             <div id="software-contents" class="contents">
-                <span class="writing left-side slide-in">
-                    <p class="text">
-                        Tuolomee AUV's software is what allows it to operate autonomously. It is structured around Robot Operating System (ROS). A state machine controls each individual task which the robot has to complete. All movement is controlled by a series of proportional, integral, derivitive (PID) controllers, which use data from all of the sensors to determine how fast each thruster needs to move in order to accomplish the goal of each individual task. To the right, see a flow chart of system functionality. The AUV's decision making is dependent on many things including depth, image vision, and many more. 
+                <span class="writing left-side slide-in flow-in">
+                    <p class="text flow-in">
+                        Anchovy AUV’s software enables fully autonomous operation, leveraging the Robot Operating System (ROS) for modularity and scalability. A custom-built finite state machine governs mission execution, allowing the robot to switch intelligently between tasks. Motion control is managed by a suite of finely tuned PID controllers, which interpret sensor inputs—such as depth, orientation, and visual feedback—to determine precise thruster outputs. System-level decision-making depends on real-time data from onboard sensors and vision systems. A diagram of Anchovy’s software architecture and task flow can be seen to the right.
                     </p>
-                     <p>
+                     <p class="text flow-in">
                         Pictured: AUV decision making flow chart
                     </p>
                 </span>
-                <span class="images right-side slide-in">
+                <span class="images right-side slide-in flow-in" style="display: flex; justify-content: center; align-items: center;">
                     <img src="../images/software-flowchart.png" class="pic">
                 </span>
-
             </div>
         </div>
         <br><br>
-
     </div>
+    <script>
+      // Flow-in animation on scroll
+      function revealOnScroll() {
+        const elements = document.querySelectorAll('.flow-in');
+        const windowHeight = window.innerHeight;
+        elements.forEach(el => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < windowHeight - 60) {
+            el.classList.add('visible');
+          }
+        });
+      }
+      window.addEventListener('scroll', revealOnScroll);
+      window.addEventListener('DOMContentLoaded', revealOnScroll);
+    </script>
+    <script src="vehicle-script.js"></script>
+</body>
+
+</html>
     <script src="vehicle-script.js"></script>
 </body>
 
