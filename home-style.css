@@ -371,23 +371,6 @@ video {
     justify-content: center;
 }
 
-.about-video-img {
-    width: 100%;
-    display: block;
-    border-radius: 18px;
-}
-
-.play-button-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(19,168,158,0.18);
-    border-radius: 50%;
-}
-
 /* About Sub Image */
 .about-sub-img-col.left {
     display: flex;
