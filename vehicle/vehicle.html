@@ -65,6 +65,13 @@
       padding: 0.5em 1.5em;
       border-radius: 16px;
     }
+    .going-blue {
+      position: relative; /* Enables absolute positioning for child elements */
+      width: 100%;       /* Set desired width */
+      height: 100%;      /* Set desired height */
+      background-color: #f0f0f0; /* Background color or image */
+      /* Optional: Add border, padding, or other styles */
+    }
     /* Teal button backgrounds */
     .spec-button {
       background: #009ca6;
@@ -145,8 +152,9 @@
     </p>
 
     <br><br>
-    <img src="../images/wavesv3.png" style="width:100%;">
 
+    <img src="../images/wavesv3.png" style="width:100%;">
+    <div class="going-blue">
     <br><br>
     
     <div id="specnav-toggle" class="specnav-toggle text" style="padding-right:5px;">
@@ -214,6 +222,7 @@
             </div>
         </div>
         <br><br>
+        </div>
     </div>
     <script>
       // Flow-in animation on scroll
