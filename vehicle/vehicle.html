@@ -18,6 +18,12 @@
       margin-right: 12vw;
       text-align: justify;
     }
+    .text-white {
+      margin-left: 12vw;
+      margin-right: 12vw;
+      text-align: justify;
+      color: #fffff !important;
+    }
     img {
       max-width: 100%;
       height: auto;
@@ -98,12 +104,6 @@
       transform: translateY(40px);
       transition: opacity 0.8s cubic-bezier(.77,0,.18,1), transform 0.8s cubic-bezier(.77,0,.18,1);
     }
-    .flow-in-white {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 0.8s cubic-bezier(.77,0,.18,1), transform 0.8s cubic-bezier(.77,0,.18,1);
-      color: #fff;
-    }
     .flow-in.visible {
       opacity: 1;
       transform: translateY(0);
@@ -177,13 +177,13 @@
     <br>
     <div class="fade-in">
         <div>
-            <h1 id="mechanics-title" class="title text flow-in-white" style="text-align:center;margin-left:auto;margin-right:auto;display:block;">Mechanics</h1>
+            <h1 id="mechanics-title" class="title text-white flow-in" style="text-align:center;margin-left:auto;margin-right:auto;display:block;">Mechanics</h1>
             <div id="mechanics-contents" class="contents">
                 <span class="writing left-side slide-in flow-in">
-                    <p class="text flow-in">
+                    <p class="text-white flow-in">
                         Anchovy AUV features a large acrylic pressure hull that houses its core electronics, sealed by two anodized aluminum end caps and protected by a precision waterjet-cut aluminum frame. The vehicle is powered by eight thrusters for full six-degree-of-freedom control and includes a dynamic trim system that allows for real-time redistribution of weight. Anchovy’s modular design enables easy, piece-by-piece updates without compromising the system’s overall usability. Much of the original structural framework has proven durable over multiple iterations, and where replacements were necessary, we engineered custom solutions to maintain integrity and performance.
                     </p>
-                     <p class="text flow-in">
+                     <p class="text-white flow-in">
                         Pictured: AUV frame
                     </p>
                 </span>
@@ -194,14 +194,14 @@
         </div>
         <br>
         <div class="fade-in">
-            <h1 id="electronics-title" class="title text flow-in-white" style="text-align:center;margin-left:auto;margin-right:auto;display:block;">Electronics</h1>
+            <h1 id="electronics-title" class="title text-white flow-in" style="text-align:center;margin-left:auto;margin-right:auto;display:block;">Electronics</h1>
             <br>
             <div id="electronics-contents" class="contents">
                 <span class="writing right-side slide-in flow-in">
-                    <p class="text flow-in-white">
+                    <p class="text-white flow-in">
                         Anchovy AUV’s electrical system is built for reliability and ease of integration, primarily utilizing off-the-shelf components. At its core is an NVIDIA Jetson onboard computer, responsible for processing sensor data and coordinating autonomous behaviors. Anchovy is equipped with a suite of sensors, including a low-light underwater camera, a Blue Robotics depth sensor, and a VectorNav inertial measurement unit (IMU) for orientation and navigation. The power distribution system is designed for safety, scalability, and efficiency, providing up to five hours of continuous operation during testing and missions.
                     </p>
-                    <p class="text flow-in-white">
+                    <p class="text-white flow-in">
                         Pictured: computer module (left) and power module (right) 
                     </p>
                 </span>
@@ -212,13 +212,13 @@
         </div>
         <br><br>
         <div class="fade-in">
-            <h1 id="software-title" class="title text flow-in-white" style="text-align:center;margin-left:auto;margin-right:auto;display:block;">Software</h1>
+            <h1 id="software-title" class="title text-white flow-in" style="text-align:center;margin-left:auto;margin-right:auto;display:block;">Software</h1>
             <div id="software-contents" class="contents">
                 <span class="writing left-side slide-in flow-in">
-                    <p class="text flow-in-white">
+                    <p class="text-white flow-in">
                         Anchovy AUV’s software enables fully autonomous operation, leveraging the Robot Operating System (ROS) for modularity and scalability. A custom-built finite state machine governs mission execution, allowing the robot to switch intelligently between tasks. Motion control is managed by a suite of finely tuned PID controllers, which interpret sensor inputs—such as depth, orientation, and visual feedback—to determine precise thruster outputs. System-level decision-making depends on real-time data from onboard sensors and vision systems. A diagram of Anchovy’s software architecture and task flow can be seen to the right.
                     </p>
-                     <p class="text flow-in-white">
+                     <p class="text-white flow-in">
                         Pictured: AUV decision making flow chart
                     </p>
                 </span>
